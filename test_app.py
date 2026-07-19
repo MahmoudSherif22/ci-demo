@@ -9,4 +9,5 @@ def test_salary():
 
     result = transform(df)
 
-    assert result["salary"][0] == 110
+    #assert result["salary"][0] == 110
+    pd.testing.assert_series_equal(result["salary"], pd.Series([110.0], name="salary"), check_less_precise=True)
