@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 from app import transform
 
 def test_salary():
